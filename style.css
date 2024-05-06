@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+html,body {
+  width: 100%;
+  height: 100vh;
+}
+
+/* page 1 start */
+.page1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./image/img1.jpg);
+    /* background-color: aqua; */
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* overflow: hidden; */
+  }
+/* page 1 ends */
