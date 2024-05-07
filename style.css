@@ -32,7 +32,8 @@ html,body {
     }
 }
 
-/* page 1 start */
+@media (max-width:2560px) {
+    /* page 1 start */
 .page1 {
     width: 100%;
     height: 100vh;
@@ -122,3 +123,5 @@ html,body {
     color:green;
 }
 /* page 1 ends */
+}
+
