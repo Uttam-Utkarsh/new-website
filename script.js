@@ -39,7 +39,7 @@ function slider2() {
 $('.owl-carousel').owlCarousel({
   loop:false,
   margin:10,
-  nav:true,
+  nav:false,
   autoplay:false,
   autoplayTimeout:3000,
   dots:false,
