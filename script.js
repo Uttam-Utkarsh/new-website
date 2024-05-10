@@ -17,8 +17,8 @@ function slider1(){
   });
 }
 
-function slider2(){
-  var swiper2 = new swiper(".page3 .mySwiper2", {
+function slider2() {
+  var swiper = new Swiper(".mySwiper2", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
@@ -31,10 +31,36 @@ function slider2(){
       slideShadows: true,
     },
     pagination: {
-      el: ".swiper-pagination2",
+      el: ".swiper-pagination",
     },
   });
 }
 
+$('.owl-carousel').owlCarousel({
+  loop:false,
+  margin:10,
+  nav:true,
+  autoplay:false,
+  autoplayTimeout:3000,
+  dots:false,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:2
+      },
+      1024:{
+          items:3
+      },
+      1440:{
+        items:4
+      },
+      2560:{
+        items:5
+      }
+  
+  }
+})
 slider1();
-// slider2();
+slider2();
