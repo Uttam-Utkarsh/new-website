@@ -53,7 +53,7 @@ $('.owl-carousel').owlCarousel({
       1024:{
           items:3
       },
-      1440:{
+      2000:{
         items:4
       },
       2560:{
