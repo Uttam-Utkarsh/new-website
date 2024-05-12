@@ -569,10 +569,110 @@
         width: 100%;
         height: 100vh;
         background-color: cadetblue;
+        color: #fdfafa;
     }
     
+    .page7 .onlycolor{
+        height: 8vh;
+        width: 100%;
+        background-color: white;
+    }
+    .page7 .middlerow{
+        height: 84vh;
+        width: 100%;
+        background-color: #080808;
+        display: flex;
+    }
 
+    .page7 .middlerow .col1{
+        /* background-color: #431717; */
+        width: 40%;
+        height: 84vh;
+        padding: 12vw 5vw;
 
+    }
+
+    .page7 .middlerow .col1 .writeen h6{
+        font-size: 3vw;
+        font-weight: 200;
+        color: red;
+        text-transform: uppercase;
+    }
+    .page7 .middlerow .col1 .writeen h2{
+        font-size: 5vw;
+        text-transform: capitalize;
+        margin-top: 3px;
+    }
+    .page7 .middlerow .col1 .writeen h3{
+        font-size: 4vw;
+        text-transform: capitalize;
+        margin-top: 4px;
+        margin-left: 85px;
+    }
+    .page7 .middlerow .col2{
+        background-color: #431717;
+        width: 60%;
+        height: 84vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    .page7 .middlerow .col2 .part1{
+        width: 18.5rem;
+        height: 3rem;
+        background-color: green;
+    }
+    .page7 .middlerow .col2 .part3{
+        width: 8rem;
+        height: 5rem;
+        background-color: rgb(17, 33, 17);
+    }
+    .page8{
+        width: 100%;
+        min-height: 100vh;
+        background-color: cornsilk;
+        display: flex;
+        color: #080808;
+        padding: 10px 10px;
+    }
+    
+    .page8 .col1{
+        padding: 5vw 5vw;
+        width: 40%;
+        height: 100%;
+    }
+    .page8 .col1 .part1{
+        text-transform: uppercase;
+        font-size: 1.8vw;
+        margin-bottom: 10rem;
+    }
+    .page8 .col1 .part2 h6{
+        text-transform: capitalize;
+        font-size: 2vw;
+        margin-top: 20px;
+
+    }
+    .page8 .col2{
+        padding-top: 3vw;
+        padding-left: 5vw;
+        width: 100%;
+    }
+    .page8 .col2 .part1{
+        text-transform: uppercase;
+        font-size: 2vw;
+
+    }
+    .page8 .col2 .part2{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    .page8 .col2 .part2 .contain-details{
+        
+        background-color: yellow;
+        height: 30vw;
+        width: 28vw;
+
+    }
 }
 
 @media (max-width:1270px) {
