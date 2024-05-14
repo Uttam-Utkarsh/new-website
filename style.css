@@ -99,6 +99,29 @@
     .page1 .row2 .col3 i {
         padding: 0px 8px;
     }
+    .page1 .top .heading{
+        width: 100vw;
+        height: 86vh;
+        color: #fdfafa;
+        /* background-color: orange; */
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .page1 .top .heading .elem h1{
+        font-size: 4vw;
+        margin-bottom: 10px;
+    }
+    .page1 .top .heading .elem button{
+        font-size: 1.8vw;
+        font-weight: 600;
+        background-color: aqua;
+        text-transform: capitalize;
+        padding: 3px 3px;
+        margin-top: 30px;
+        border-radius: 50px;
+    }
 
     .page1 .for-hover a:hover {
         /* font-size: 2.2vh; */
@@ -1411,6 +1434,10 @@
 
 @media (max-width: 426px) {
 
+    .page1{
+        height: 50vh;
+    }
+
     .page1 .row2 {
         height: 50px;
     }
@@ -1433,6 +1460,20 @@
 
     .page1 .row3 {
         height: 28%;
+    }
+    .page1 .back {
+        width: 100%;
+        height: calc(50vh);
+    }
+    .page1 .top .heading {
+        width: 100vw;
+        height: 38vh;
+    }
+    .page1 .top .heading .elem h1 {
+        font-size: 6vw;
+    }
+    .page1 .top .heading .elem p {
+        font-size: 2vw;
     }
 
     .page1 .both-buttons {

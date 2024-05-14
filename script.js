@@ -16,7 +16,6 @@ function slider1() {
     },
   });
 }
-
 function slider2() {
   var swiper = new Swiper(".mySwiper2", {
     effect: "coverflow",
@@ -35,33 +34,33 @@ function slider2() {
     },
   });
 }
-
-$(".owl-carousel").owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: false,
-  autoplay: false,
-  autoplayTimeout: 3000,
-  dots: false,
-  responsive: {
-    0: {
-      items: 1,
+function myowl_crosol(){
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    autoplay: false,
+    autoplayTimeout: 3000,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1024: {
+        items: 3,
+      },
+      2000: {
+        items: 4,
+      },
+      2560: {
+        items: 5,
+      },
     },
-    600: {
-      items: 2,
-    },
-    1024: {
-      items: 3,
-    },
-    2000: {
-      items: 4,
-    },
-    2560: {
-      items: 5,
-    },
-  },
-});
-
+  });
+}
 function front_page_Animation(){
   Shery.imageEffect(".back", {
     style: 6,
@@ -102,7 +101,26 @@ function front_page_Animation(){
     gooey: true,
   });
 }
+function front_page(){
+  gsap.from(".page1 .row2 .col1",{
+    duration:3,
+    scale:0.4
+    
+  })
+  gsap.from(".page1 .top .heading ",{
+    duration:2,
+    scale:0.6
+    
+  })
+}
+
+
+
+
 
 
 slider1();
 slider2();
+myowl_crosol();
+front_page();
+// front_page_Animation();
