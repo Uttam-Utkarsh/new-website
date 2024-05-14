@@ -12,6 +12,9 @@
         width: 100%;
         height: 100%;
     }
+    .main{
+        position: relative;
+    }
 
     /* page 1 start */
     .page1 {
@@ -832,7 +835,7 @@
 
     footer .row1 {
         width: 100%;
-        height: 50vh;
+        height: 49vh;
         border-bottom: 1px solid white;
         display: flex;
         justify-content: space-between;
@@ -941,7 +944,15 @@
 
 
 
-
+@media (max-width:1440px) {
+    .page9 .row2 .myowl .myown {
+        width: 30vw;
+        height: 23vw;
+    }
+    .page9 .row2 .myowl .myown .row-1 {
+        margin-bottom: 12vw;
+    }
+}
 
 
 
@@ -959,12 +970,7 @@
         text-transform: uppercase; */
     }
 
-    .page4 .row2 .col1 {
-        /* display: flex;
-        flex-direction: column; */
-        /* padding: 2.5% 4%;
-        text-transform: uppercase; */
-    }
+   
 
     .page4 .row2 .col1 .contain-image {
         width: 70vh;
@@ -991,20 +997,7 @@
         margin-left: 0px;
     }
 
-    /* .row2 .col1 .image-details {
-        margin-left: 0%;
-    } */
-
-    .page5div1 {
-        /* width: 100%;
-        height: 300px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around; */
-        /* flex-direction: column; */
-    }
-
-    .page5div1 .part {
+     .page5div1 .part {
         padding: 20px 20px;
         /* border-bottom: 1px solid black; */
         /* border-right: none; */
@@ -1062,6 +1055,27 @@
     .page7 .middlerow .col2 .part1 {
         height: 24vw;
     }
+    .page8 .col2 .part2 .contain-details .part-3 p {
+        font-size: 1vw;
+    }
+    .page9 .row2 .myowl .myown .row-1 {
+        margin-bottom: 8vw;
+    }
+    .page9 {
+        height: 80vh;
+    }
+    .page9 .row2 .myowl .myown .row-1 i {
+        width: 3vw;
+        height: 3vw;
+        font-size: 1.5vw;
+    }
+    .page9 .row2 .myowl .myown .row-1 h6 {
+        width: 10vw;
+        height: 4vw;
+        font-size: 1.5vw;
+        padding: 10px 10px;
+    }
+    
 }
 
 
@@ -1139,14 +1153,7 @@
         margin-left: 20rem;
     }
 
-    .page4 .row2 .col1 {
-        /* display: flex;
-        flex-direction: column; */
-        /* padding: 2.5% 4%;
-        text-transform: uppercase; */
-    }
-
-    .page4 .row2 .col1 .contain-image {
+      .page4 .row2 .col1 .contain-image {
         width: 60vh;
         height: 35vh;
         /* border-radius: 20px; */
@@ -1302,14 +1309,21 @@
         margin-left: 170px;
     }
 
+
 }
 
 
 
 
-@media (max-width:769) {
+@media (max-width:769px) {
+
+    .page7{
+        height: 86vh ;
+    }
+    .page7 .middlerow {
+        height: 70vh;
+    }
     .page7 .middlerow .col1 {
-        /* background-color: #431717; */
         width: 100%;
         height: 18vw;
         padding-top: 5vw;
@@ -1318,10 +1332,12 @@
 
     .page7 .middlerow .col2 {
         margin-top: 13vw;
+        height: 60%;
     }
 
     .page7 .middlerow .col2 .part1 .mycrou .myui {
         width: 40vw;
+        height: 24vw;
     }
 
     .page7 .middlerow .col2 .part1 {
@@ -1331,6 +1347,34 @@
     .page7 .middlerow .col2 .part1 .mycrou .myui .myyrow1 {
         margin-bottom: 5vw;
     }
+    .page8{
+        flex-direction: column;
+    }
+    .page8 .col1 {
+        display: flex;
+        width: 100%;
+    }
+    .page8 .col1 .part1 {
+        margin-bottom: 4rem;
+    }
+    .page8 .col1 .part2{
+        display: flex;
+        margin-top: 4vw;
+        gap: 10px;
+        
+    }
+    .page8 .col2 .part2 .contain-details {
+        height: 34vw;
+        width: 42vw;
+    }
+    .page9 .row2 .myowl .myown {
+        width: 47vw;
+        height: 30vw;
+    }
+    .page9 .row2 {
+        padding: 13vw 2vw;
+    }
+
 }
 
 
@@ -1339,12 +1383,14 @@
 
 
 @media (max-width:556px) {
+
     .page5div2 .part2 {
         margin-left: 11rem;
     }
 }
 
 @media (max-width: 426px) {
+
     .page1 .row2 {
         height: 50px;
     }
@@ -1406,9 +1452,7 @@
     }
 
     .page4 .row1 {
-
         gap: 0rem;
-
     }
 
     .page4 .row1 h1 {
@@ -1424,8 +1468,6 @@
         width: 55vh;
         height: 35vh;
         margin-left: 15px;
-        /* border-radius: 20px; */
-        /* overflow: hidden; */
     }
 
     .page4 .row2 .col1 .image-details {
@@ -1460,14 +1502,67 @@
     }
     .page7 .middlerow .col2 .part1 .mycrou .myui {
         width: 86vw;
+        height: 40vw;
     }
     .page7 .middlerow .col2 .part1 {
         height: 48vw;
     }
-
+    .page7 .middlerow .col1 .writeen h6 {
+        font-size: 5vw;      
+    }
+    .page7 .middlerow .col2 .part1 .mycrou .myui .myyrow1 {
+        margin-bottom: 12vw;
+    }
+    .page7 .middlerow .col2 .part1 .mycrou .myui .myyrow1 .part-1 {
+        width: 11.6vw;
+        height: 11.6vw;
+    }
+    .page8 .col1 {
+        padding: 5vw 2vw;
+    }
+    .page8 .col1 .part1 {
+        margin-bottom: 0rem;
+    }
+    .page8 .col2 {
+        padding: 2vw 10vw;
+    }
+    .page8 .col2 .part2 {
+        flex-direction: column;
+        margin-top: 20px;
+        
+    }
+    .page8 .col2 .part2 .contain-details {
+        margin-bottom: 20px;
+        height: 45vw;
+        width: 76vw;
+    }
+    .page9 {
+        height: 70vh;
+    }
+    .page9 .row1 {
+        height: 50vw;
+        padding: 43px 30px;
+    }
+    .page9 .row1 h1 {
+        font-size: 6.5vw;
+    }
+    .page9 .row1 p{
+        padding: 2px 20px;
+    
+    }
+    .page9 .row2 .myowl .myown {
+        width: 80vw;
+        height: 50vw;
+    }
+    .page9 .row2 {
+        padding: 0vw 9vw;
+    }
+    
+    
 }
 
 @media (max-width:376px) {
+
     .page4 .row2 .col1 .contain-image {
         width: 40vh;
         margin: 0px 10px;
@@ -1514,11 +1609,31 @@
     .page6 .row2 .owl-carousel .item .contain-img {
         width: 14.9rem;
         height: 15rem;
-
     }
 
     .page6 .row2 {
         padding: 10px 40px;
     }
 
+    .page7 {
+        height: 52vh;
+    }
+    .page7 .middlerow .col2 .part1 .mycrou .myui {
+        width: 86vw;
+        height: 45vw;
+    }
+    .page7 .middlerow .col2 .part1 .mycrou .myui .myyrow1 {
+        margin-bottom: 14vw;
+    }
+    .page8 .col1 {
+        padding: 5vw 0vw;
+    }
+    .page8 .col2 .part2 .contain-details {
+        margin-bottom: 10px;
+        height: 50vw;
+    }
+    .page9 {
+        height: 62vh;
+    }
+    
 }
