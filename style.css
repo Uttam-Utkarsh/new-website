@@ -12,7 +12,8 @@
         width: 100%;
         height: 100%;
     }
-    .main{
+
+    .main {
         position: relative;
     }
 
@@ -99,7 +100,8 @@
     .page1 .row2 .col3 i {
         padding: 0px 8px;
     }
-    .page1 .top .heading{
+
+    .page1 .top .heading {
         width: 100vw;
         height: 86vh;
         color: #fdfafa;
@@ -109,11 +111,13 @@
         align-items: center;
         justify-content: center;
     }
-    .page1 .top .heading .elem h1{
+
+    .page1 .top .heading .elem h1 {
         font-size: 4vw;
         margin-bottom: 10px;
     }
-    .page1 .top .heading .elem button{
+
+    .page1 .top .heading .elem button {
         font-size: 1.8vw;
         font-weight: 600;
         background-color: aqua;
@@ -131,7 +135,7 @@
 
     .page1 .back {
         width: 100%;
-        height: calc(100vh );
+        height: calc(100vh);
         position: absolute;
     }
 
@@ -140,10 +144,12 @@
         height: 100%;
         position: absolute;
     }
-    .page1{
+
+    .page1 {
         position: relative;
     }
-    .page1 .top{
+
+    .page1 .top {
         position: absolute;
         width: 100%;
         z-index: 10;
@@ -151,7 +157,7 @@
 
     .page2 {
         width: 100%;
-        min-height: 100vh;
+        min-height: 150vh;
         background-color: #7b3535;
     }
 
@@ -176,15 +182,17 @@
         line-height: 5vw;
     }
 
+
     .image-containerfor-row2 {
-        width: 30%;
-        height: 100%;
+        width: 30vw;
+        height: 23vw;
         object-fit: cover;
         object-position: center;
         display: block;
         border-radius: 20px;
         overflow: hidden;
     }
+
 
     .image-containerfor-row2 img {
         width: 100%;
@@ -197,16 +205,16 @@
         width: 100%;
         height: 35vh;
         display: flex;
-        padding-top: 30px;
+        padding-top: 75px;
         /* align-items: center; */
         justify-content: space-around;
     }
 
     .page2 .row3 {
         width: 100%;
-        height: 35vh;
+        height: 65vh;
         display: flex;
-        padding-top: 30px;
+        padding-top: 230px;
         /* align-items: center; */
         justify-content: space-around;
     }
@@ -491,6 +499,16 @@
         font-size: 5rem;
         font-weight: 100;
         color: rgba(248, 16, 16, 0.616);
+    }
+
+    .page5div2 {
+        background-image: url("https://images.unsplash.com/photo-1583373834259-46cc92173cb7?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-around;
+        min-height: 35vh;
     }
 
     .page5div2 {
@@ -981,6 +999,7 @@
         width: 30vw;
         height: 23vw;
     }
+
     .page9 .row2 .myowl .myown .row-1 {
         margin-bottom: 12vw;
     }
@@ -1002,7 +1021,7 @@
         text-transform: uppercase; */
     }
 
-   
+
 
     .page4 .row2 .col1 .contain-image {
         width: 70vh;
@@ -1029,7 +1048,7 @@
         margin-left: 0px;
     }
 
-     .page5div1 .part {
+    .page5div1 .part {
         padding: 20px 20px;
         /* border-bottom: 1px solid black; */
         /* border-right: none; */
@@ -1087,27 +1106,32 @@
     .page7 .middlerow .col2 .part1 {
         height: 24vw;
     }
+
     .page8 .col2 .part2 .contain-details .part-3 p {
         font-size: 1vw;
     }
+
     .page9 .row2 .myowl .myown .row-1 {
         margin-bottom: 8vw;
     }
+
     .page9 {
         height: 80vh;
     }
+
     .page9 .row2 .myowl .myown .row-1 i {
         width: 3vw;
         height: 3vw;
         font-size: 1.5vw;
     }
+
     .page9 .row2 .myowl .myown .row-1 h6 {
         width: 10vw;
         height: 4vw;
         font-size: 1.5vw;
         padding: 10px 10px;
     }
-    
+
 }
 
 
@@ -1185,7 +1209,7 @@
         margin-left: 20rem;
     }
 
-      .page4 .row2 .col1 .contain-image {
+    .page4 .row2 .col1 .contain-image {
         width: 60vh;
         height: 35vh;
         /* border-radius: 20px; */
@@ -1259,6 +1283,7 @@
     .page4 .row1 .col2 {
         margin-left: 12rem;
     }
+
     .page2 .row1 .col1 h5 {
         font-size: 2.2vw;
     }
@@ -1352,12 +1377,14 @@
 
 @media (max-width:769px) {
 
-    .page7{
-        height: 86vh ;
+    .page7 {
+        height: 86vh;
     }
+
     .page7 .middlerow {
         height: 70vh;
     }
+
     .page7 .middlerow .col1 {
         width: 100%;
         height: 18vw;
@@ -1382,40 +1409,50 @@
     .page7 .middlerow .col2 .part1 .mycrou .myui .myyrow1 {
         margin-bottom: 5vw;
     }
-    .page8{
+
+    .page8 {
         flex-direction: column;
     }
+
     .page8 .col1 {
         display: flex;
         width: 100%;
     }
+
     .page8 .col1 .part1 {
         margin-bottom: 4rem;
     }
-    .page8 .col1 .part2{
+
+    .page8 .col1 .part2 {
         display: flex;
         margin-top: 4vw;
         gap: 10px;
-        
+
     }
+
     .page8 .col2 .part2 .contain-details {
         height: 34vw;
         width: 42vw;
     }
+
     .page9 .row2 .myowl .myown {
         width: 47vw;
         height: 30vw;
     }
+
     .page9 .row2 {
         padding: 13vw 2vw;
     }
+
     footer {
         height: 46vh;
     }
+
     footer .row1 {
         width: 100%;
         height: 34vh;
     }
+
     footer .row2 .part1 .img-container {
         width: 50px;
         height: 50px;
@@ -1437,7 +1474,7 @@
 
 @media (max-width: 426px) {
 
-    .page1{
+    .page1 {
         height: 50vh;
     }
 
@@ -1456,26 +1493,32 @@
     .page1 .row1 .part-small {
         display: block !important;
     }
+
     .page1 .row1 i {
         font-size: 1.1rem;
     }
+
     .page1 .row2 .col3 i {
         padding: 0px 8px;
         font-size: 1.2rem;
     }
+
     .page1 .top .heading .elem h1 {
         font-size: 7vw;
     }
+
     .page1 .top .heading .elem button {
         font-size: 3.8vw;
     }
+
     .page2 .row1 .col1 h5 {
         font-size: 4.2vw;
     }
+
     .page2 .row1 .col2 h1 {
         font-size: 5.8vw;
     }
-    
+
 
     .page1 .row1 .contacts {
         display: none;
@@ -1484,17 +1527,21 @@
     .page1 .row3 {
         height: 28%;
     }
+
     .page1 .back {
         width: 100%;
         height: calc(50vh);
     }
+
     .page1 .top .heading {
         width: 100vw;
         height: 38vh;
     }
+
     .page1 .top .heading .elem h1 {
         font-size: 6vw;
     }
+
     .page1 .top .heading .elem p {
         font-size: 2vw;
     }
@@ -1524,25 +1571,29 @@
         margin: 20px 32px;
         background-color: #080808;
     }
+
     .page3 .row2 h1 {
         font-size: 7vw;
         margin-bottom: 10px;
     }
+
     .page3 .row2 h6 {
         font-size: 2vw;
         line-height: 2.6vw;
     }
+
     .page3 .row3 {
         width: 100%;
         min-height: 50px;
         padding: 30px 42px;
     }
 
-    
+
     .page3 .row3 h6 {
         margin: 0px 5px;
         font-size: 1.3rem;
     }
+
     .page3 .row4 {
         margin-top: 0px;
     }
@@ -1578,6 +1629,7 @@
         border-bottom: 1px solid black;
         border-right: none;
     }
+
     .page5div2 {
         background-image: url("https://images.unsplash.com/photo-1583373834259-46cc92173cb7?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
         background-position: center;
@@ -1587,14 +1639,17 @@
         justify-content: space-around;
         min-height: 35vh;
     }
+
     .page5div2 .part1 {
         width: 100%;
         height: 0vw;
         padding: 27px 79px;
     }
+
     .page5div2 .part2 h1 {
         font-size: 5vw;
     }
+
     .page5div2 .part2 h6 {
         font-size: 1.9vw;
     }
@@ -1613,69 +1668,87 @@
         align-items: flex-start;
         margin-left: 150px;
     }
-    .page7{
+
+    .page7 {
         height: 65vh;
     }
+
     .page7 .middlerow .col2 .part1 .mycrou .myui {
         width: 86vw;
         height: 40vw;
     }
+
     .page7 .middlerow .col2 .part1 {
         height: 48vw;
     }
+
     .page7 .middlerow .col1 .writeen h6 {
-        font-size: 5vw;      
+        font-size: 5vw;
     }
+
     .page7 .middlerow .col2 .part1 .mycrou .myui .myyrow1 {
         margin-bottom: 12vw;
     }
+
     .page7 .middlerow .col2 .part1 .mycrou .myui .myyrow1 .part-1 {
         width: 11.6vw;
         height: 11.6vw;
     }
+
     .page8 .col1 {
         padding: 5vw 2vw;
         display: block;
     }
+
     .page8 .col1 .part1 {
         font-size: 3.8vw;
         margin-bottom: 0px;
     }
+
     .page8 .col2 {
         padding: 2vw 10vw;
     }
+
     .page8 .col2 .part2 {
         flex-direction: column;
         margin-top: 20px;
-        
+
     }
+
     .page8 .col2 .part2 .contain-details {
         margin-bottom: 20px;
         height: 45vw;
         width: 76vw;
     }
+
     .page9 {
         height: 70vh;
     }
+
     .page9 .row1 {
         height: 50vw;
         padding: 43px 30px;
     }
+
     .page9 .row1 h1 {
         font-size: 6.5vw;
     }
-    .page9 .row1 p{
+
+    .page9 .row1 p {
         padding: 2px 20px;
-    
+
     }
+
     .page9 .row2 .myowl .myown {
         width: 80vw;
         height: 50vw;
     }
+
     .page9 .row2 {
         padding: 0vw 9vw;
-    
+
     }
+
     footer .row1 {
         width: 100%;
         height: 49vh;
@@ -1683,11 +1756,12 @@
         display: block;
         justify-content: space-between;
     }
-    
+
     footer .row1 .part1 {
         width: 100%;
         padding: 20px 0px;
     }
+
     footer .row1 .part2 {
         /* background-color: green; */
         display: flex;
@@ -1695,33 +1769,40 @@
         width: 100%;
         padding: 0px 0px;
     }
+
     footer .row1 {
         width: 100%;
         height: 24vh;
     }
+
     footer .row2 .part1 .img-container {
         width: 40px;
         height: 40px;
         margin-right: 20px;
     }
+
     footer {
         height: 37vh;
     }
+
     footer .row1 {
         width: 100%;
         height: 28vh;
     }
+
     footer .row1 .part1 .col1 h6 {
         font-size: 2vw;
     }
+
     footer .row1 .part1 .col1 h2 {
         font-size: 2.5vw;
-    color: #7b3535;
+        color: #7b3535;
     }
-    
+
     footer .row2 .part2 h6 {
         font-size: 1.9vw;
     }
+
     footer .row1 .part2 h5 {
         font-size: 4vw;
         margin-bottom: 3vw;
@@ -1749,6 +1830,7 @@
     .page5div2 {
         justify-content: center;
     }
+
     .page5div2 .part1 {
         padding: 80px 79px;
     }
@@ -1771,6 +1853,7 @@
         height: 20vh;
         padding: 0px 20px;
     }
+
     .page6 .row1 .part1 {
         font-size: 1.9vw;
         height: 60%;
@@ -1795,25 +1878,29 @@
     .page7 {
         height: 52vh;
     }
+
     .page7 .middlerow .col2 .part1 .mycrou .myui {
         width: 86vw;
         height: 45vw;
     }
+
     .page7 .middlerow .col2 .part1 .mycrou .myui .myyrow1 {
         margin-bottom: 14vw;
     }
+
     .page8 .col1 {
         padding: 5vw 0vw;
     }
+
     .page8 .col2 .part2 .contain-details {
         margin-bottom: 10px;
         height: 50vw;
     }
+
     .page9 {
         height: 62vh;
     }
-    .bh{
 
-    }
-    
+    .bh {}
+
 }

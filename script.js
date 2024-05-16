@@ -34,7 +34,7 @@ function slider2() {
     },
   });
 }
-function myowl_crosol(){
+function myowl_crosol() {
   $(".owl-carousel").owlCarousel({
     loop: true,
     margin: 10,
@@ -61,7 +61,7 @@ function myowl_crosol(){
     },
   });
 }
-function front_page_Animation(){
+function front_page_Animation() {
   Shery.imageEffect(".back", {
     style: 6,
     config: {
@@ -80,7 +80,7 @@ function front_page_Animation(){
       scrollLerp: { value: 0.07 },
       gooey: { value: true },
       infiniteGooey: { value: true },
-      growSize: { value: 1.21, range: [1, 15] },
+      growSize: { value: 1, range: [1, 15] },
       durationOut: { value: 1, range: [0.1, 5] },
       durationIn: { value: 1.5, range: [0.1, 5] },
       displaceAmount: { value: 0.5 },
@@ -90,37 +90,70 @@ function front_page_Animation(){
       geoVertex: { range: [1, 64], value: 1 },
       noEffectGooey: { value: true },
       onMouse: { value: 0 },
-      noise_speed: { value: 0.99, range: [0, 10] },
-      metaball: { value: 0.2, range: [0, 2], _gsap: { id: 3 } },
+      noise_speed: { value: 1.83, range: [0, 10] },
+      metaball: { value: 0.05, range: [0, 2], _gsap: { id: 3 } },
       discard_threshold: { value: 0.5, range: [0, 1] },
       antialias_threshold: { value: 0, range: [0, 0.1] },
-      noise_height: { value: 0.14, range: [0, 2] },
-      noise_scale: { value: 44.27, range: [0, 100] },
+      noise_height: { value: 0.27, range: [0, 2] },
+      noise_scale: { value: 100, range: [0, 100] },
     },
     debug: false,
     gooey: true,
   });
 }
-function front_page(){
-  gsap.from(".page1 .row2 .col1",{
-    duration:3,
-    scale:0.4
-    
-  })
-  gsap.from(".page1 .top .heading ",{
-    duration:2,
-    scale:0.6
-    
-  })
+function front_page() {
+  gsap.from(".page1 .row2 .col1", {
+    duration: 3,
+    scale: 0.4,
+  });
+  gsap.from(".page1 .top .heading ", {
+    duration: 2,
+    scale: 0.6,
+  });
 }
 
-
-
-
-
-
+function secondpage(){
+  gsap.from(".page2 .row1 .col1 h5",{
+    x:-260,
+    duration:2,
+    rotate:360,
+    scrollTrigger:{
+      trigger:".page2",
+      scroller:"body",
+      markers:false,
+      start: "top 600px",
+      end:"top 500px"
+    }
+  })
+  gsap.from(".page2 .row1 .col2 h1",{
+    x:1300,
+    duration:2,
+    rotate:360,
+    scrollTrigger:{
+      trigger:".page2",
+      scroller:"body",
+      markers:false,
+      start: "top 500px",
+      end:"top 50px"
+    }
+  })
+  gsap.from(".image-containerfor-row2",{
+    y:-300,
+    duration:2,
+    rotate:360,
+    stagger:1,
+    scrollTrigger:{
+      trigger:".page2",
+      scroller:"body",
+      markers:true,
+      start: "top 700px",
+      end:"top 50px"
+    }
+  })
+}
 slider1();
 slider2();
 myowl_crosol();
 front_page();
-// front_page_Animation();
+front_page_Animation();
+secondpage();
