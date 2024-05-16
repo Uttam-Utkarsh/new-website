@@ -1700,11 +1700,32 @@
     footer .row2 .part1 .img-container {
         width: 40px;
         height: 40px;
+        margin-right: 20px;
     }
     footer {
-        height: 33vh;
+        height: 37vh;
+    }
+    footer .row1 {
+        width: 100%;
+        height: 28vh;
+    }
+    footer .row1 .part1 .col1 h6 {
+        font-size: 2vw;
+    }
+    footer .row1 .part1 .col1 h2 {
+        font-size: 2.5vw;
+    color: #7b3535;
     }
     
+    footer .row2 .part2 h6 {
+        font-size: 1.9vw;
+    }
+    footer .row1 .part2 h5 {
+        font-size: 4vw;
+        margin-bottom: 3vw;
+        width: 25vw;
+        height: 7vw;
+    }
 }
 
 @media (max-width:376px) {
