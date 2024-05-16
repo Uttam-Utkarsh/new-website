@@ -145,9 +145,25 @@ function secondpage(){
     scrollTrigger:{
       trigger:".page2",
       scroller:"body",
-      markers:true,
+      markers:false,
       start: "top 700px",
       end:"top 50px"
+    }
+  })
+}
+
+
+function thirdpage(){
+  gsap.from(".page3 .row2 h1",{
+    y:-260,
+    duration:2,
+    ease:"bounce.out",
+    scrollTrigger:{
+      trigger:".page3",
+      scroller:"body",
+      markers:true,
+      start: "top 400px",
+      end:"top 100px"
     }
   })
 }
@@ -157,3 +173,4 @@ myowl_crosol();
 front_page();
 front_page_Animation();
 secondpage();
+thirdpage();
