@@ -148,6 +148,7 @@ function secondpage(){
       markers:false,
       start: "top 700px",
       end:"top 50px"
+      
     }
   })
 }

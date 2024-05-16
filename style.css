@@ -15,6 +15,7 @@
 
     .main {
         position: relative;
+        overflow: hidden;
     }
 
     /* page 1 start */
