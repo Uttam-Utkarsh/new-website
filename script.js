@@ -1,3 +1,36 @@
+function mylocomotive(){
+  gsap.registerPlugin(ScrollTrigger);
+
+// Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
+
+const locoScroll = new LocomotiveScroll({
+  el: document.querySelector(".main"),
+  smooth: true
+});
+// each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
+locoScroll.on("scroll", ScrollTrigger.update);
+
+// tell ScrollTrigger to use these proxy methods for the ".main" element since Locomotive Scroll is hijacking things
+ScrollTrigger.scrollerProxy(".main", {
+  scrollTop(value) {
+    return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+  }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+  getBoundingClientRect() {
+    return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+  },
+  // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
+  pinType: document.querySelector(".main").style.transform ? "transform" : "fixed"
+});
+
+
+// each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
+ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+// after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+ScrollTrigger.refresh();
+
+}
+
 function slider1() {
   var swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
@@ -139,11 +172,11 @@ function secondpage(){
   })
   gsap.from(".image-containerfor-row2",{
     y:-300,
-    duration:2,
-    rotate:360,
+    duration:1,
+    rotate:0,
     stagger:1,
     scrollTrigger:{
-      trigger:".page2",
+      trigger:".image-containerfor-row2",
       scroller:"body",
       markers:false,
       start: "top 700px",
@@ -162,16 +195,18 @@ function thirdpage(){
     scrollTrigger:{
       trigger:".page3",
       scroller:"body",
-      markers:true,
+      markers:false,
       start: "top 400px",
       end:"top 100px"
     }
   })
 }
+
 slider1();
 slider2();
 myowl_crosol();
 front_page();
-front_page_Animation();
-secondpage();
-thirdpage();
+// front_page_Animation();
+// secondpage();
+// thirdpage();
+// mylocomotive();

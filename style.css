@@ -175,6 +175,7 @@
 
     .page2 .row1 .col1 h5 {
         font-size: 1.2vw;
+        color: #fdfafa;
 
     }
 
@@ -192,6 +193,24 @@
         display: block;
         border-radius: 20px;
         overflow: hidden;
+        position: relative;
+    }
+
+    .imgdets{
+        width: 30vw;
+        height: 23vw;
+        position: absolute;
+        /* background-color: black; */
+        z-index: 3;
+        left: 30vw;
+
+    }
+
+    .image-containerfor-row2:hover .imgdets{
+        left:0vw;
+        transition-duration: 1s;
+        background-color: #431717;
+        /* transition: ease-in-out; */
     }
 
 
