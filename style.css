@@ -171,6 +171,7 @@
         padding: 16px 30px;
         text-transform: uppercase;
         color: #0a0a0a;
+        overflow: hidden;
     }
 
     .page2 .row1 .col1 h5 {
@@ -278,6 +279,7 @@
         color: #1b1b1bc0;
         text-transform: capitalize;
         padding: 0px 20px;
+        overflow: hidden;
     }
 
     .page3 .row3 h6 {

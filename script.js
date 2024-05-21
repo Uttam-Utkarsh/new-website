@@ -6,6 +6,7 @@ function mylocomotive() {
   const locoScroll = new LocomotiveScroll({
     el: document.querySelector(".main"),
     smooth: true,
+    lerp:0.02,
   });
   // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
   locoScroll.on("scroll", ScrollTrigger.update);
@@ -166,9 +167,10 @@ function secondpage() {
     },
   });
   gsap.from(".page2 .row1 .col2 h1", {
-    x: 1300,
+    y: -300,
     duration: 2,
-    rotate: 360,
+    // rotate: 360,
+    ease: "bounce.out",
     scrollTrigger: {
       trigger: ".page2",
       scroller: ".main",
@@ -177,19 +179,7 @@ function secondpage() {
       end: "top 50px",
     },
   });
-  gsap.from(".image-containerfor-row2", {
-    y: -300,
-    duration: 1,
-    rotate: 0,
-    stagger: 1,
-    scrollTrigger: {
-      trigger: ".image-containerfor-row2",
-      scroller: ".main",
-      markers: false,
-      start: "top 700px",
-      end: "top 50px",
-    },
-  });
+
 }
 
 function thirdpage() {
@@ -205,7 +195,58 @@ function thirdpage() {
       end: "top 100px",
     },
   });
+
+  gsap.from(".page3 .row3 h6", {
+    x: 1200,
+    duration: 0.5,
+    ease: "power1.inout",
+    stagger: 0.5,
+    scrollTrigger: {
+      trigger: ".page3",
+      scroller: ".main",
+      markers: false,
+      start: "top 100px",
+      end: "top 200px",
+    }
+  })
 }
+
+function fifthpage() {
+
+  var t1 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".page5div1",
+      scroller: ".main",
+      markers: false,
+      start: "top 250px",
+      end: "top 100px",
+      onEnter: showrandom
+    }
+  });
+
+  function showrandom() {
+    let num1 = document.querySelector("#num1");
+    let num2 = document.querySelector("#num2");
+    let num3 = document.querySelector("#num3");
+    let myInterval = setInterval(myTimer, 30);
+    setTimeout(myStopFunction, 1500);
+
+    function myTimer() {
+      num1.innerHTML = Math.floor(Math.random() * 10);
+      num2.innerHTML = Math.floor(Math.random() * 1000);
+      num3.innerHTML = Math.floor(Math.random() * 100);
+    };
+
+    function myStopFunction() {
+      num1.innerHTML = "10";
+      num2.innerHTML = "300";
+      num3.innerHTML = "70";
+      clearInterval(myInterval);
+    };
+  }
+};
+
+
 
 mylocomotive();
 slider1();
@@ -215,3 +256,4 @@ front_page();
 front_page_Animation();
 secondpage();
 thirdpage();
+fifthpage();
