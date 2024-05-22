@@ -156,13 +156,13 @@ function front_page() {
 function secondpage() {
   gsap.from(".page2 .row1 .col1 h5", {
     x: -260,
-    duration: 2,
+    duration: 1,
     rotate: 360,
     scrollTrigger: {
       trigger: ".page2",
       scroller: ".main",
       markers: false,
-      start: "top 600px",
+      start: "top 400px",
       end: "top 500px",
     },
   });
@@ -198,9 +198,8 @@ function thirdpage() {
 
   gsap.from(".page3 .row3 h6", {
     x: 1800,
-    duration: 0.5,
     ease: "power1.inout",
-    stagger: 0.5,
+    stagger: 0.2,
     scrollTrigger: {
       trigger: ".page3",
       scroller: ".main",
@@ -218,7 +217,7 @@ function fifthpage() {
       trigger: ".page5div1",
       scroller: ".main",
       markers: false,
-      start: "top 250px",
+      start: "top 500px",
       end: "top 100px",
       onEnter: showrandom
     }
@@ -287,7 +286,7 @@ function seventhpage(){
       trigger:".page7 .middlerow .col1",
       scroller:".main",
       markers:false,
-      start: "top 300px",
+      start: "top 500px",
       end:"bottom 200px"
     }
 
@@ -299,7 +298,7 @@ function seventhpage(){
       trigger:".page7 .middlerow .col1",
       scroller:".main",
       markers:false,
-      start: "top 300px",
+      start: "top 500px",
       end:"bottom 200px"
     }
 
@@ -311,7 +310,7 @@ function seventhpage(){
       trigger:".page7 .middlerow .col1",
       scroller:".main",
       markers:false,
-      start: "top 300px",
+      start: "top 500px",
       end:"bottom 200px"
     }
 
@@ -327,7 +326,7 @@ function eightpage(){
     scrollTrigger:{
       trigger:".page8 .col1 .part1",
       scroller:".main",
-      markers:true,
+      markers:false,
       start: "top 300px",
       end:"bottom 200px"
     }
@@ -340,7 +339,7 @@ function eightpage(){
     scrollTrigger:{
       trigger:".page8 .col1 .part1",
       scroller:".main",
-      markers:true,
+      markers:false,
       start: "top 300px",
       end:"bottom 200px"
     }
@@ -351,8 +350,8 @@ mylocomotive();
 slider1();
 slider2();
 myowl_crosol();
-// front_page();
-// front_page_Animation();
+front_page();
+front_page_Animation();
 secondpage();
 thirdpage();
 fifthpage();
