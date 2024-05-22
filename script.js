@@ -247,19 +247,115 @@ function fifthpage() {
 };
 
 function sixthpage(){
-  gsap.to(".page6 .row1 .part1 h1",{
-    x:"25vw",
+
+  // var tl = gsap.timeline()
+  gsap.from(".page6 .row1 .part1 h1",{
+    x:"-40vw",
+    ease:"power1.inout",
+    duration:1,
+    scrollTrigger:{
+      trigger:".page6 .row1 .part1",
+      scroller:".main",
+      markers:false,
+      start: "top 300px",
+      end:"bottom 200px"
+    }
+
+  })
+  gsap.from(".page6 .row1 .part2 p",{
+    x:"-45vw",
+    duration:1,
+    scrollTrigger:{
+      trigger:".page6 .row1 .part1",
+      scroller:".main",
+      markers:false,
+      start: "top 300px",
+      end:"bottom 200px"
+    }
 
   })
 }
 
+
+function seventhpage(){
+  gsap.from(".page7 .middlerow .col1 .writeen h3",{
+    y:"45vw",
+    stagger:0.1,
+    duration:1,
+
+    scrollTrigger:{
+      trigger:".page7 .middlerow .col1",
+      scroller:".main",
+      markers:false,
+      start: "top 300px",
+      end:"bottom 200px"
+    }
+
+  })
+  gsap.to(".page7 .middlerow .col1 .writeen #students",{
+    delay:1.2,
+    x:"6vw",
+    scrollTrigger:{
+      trigger:".page7 .middlerow .col1",
+      scroller:".main",
+      markers:false,
+      start: "top 300px",
+      end:"bottom 200px"
+    }
+
+  })
+  gsap.to(".page7 .middlerow .col1 .writeen #feedback",{
+    delay:1.5,
+    x:"10vw",
+    scrollTrigger:{
+      trigger:".page7 .middlerow .col1",
+      scroller:".main",
+      markers:false,
+      start: "top 300px",
+      end:"bottom 200px"
+    }
+
+  })
+}
+
+function eightpage(){
+  
+  gsap.to(".page8 .col1 .part1 h4",{
+    // x:"-45vw",
+    scale:1.5,
+    duration:1,
+    scrollTrigger:{
+      trigger:".page8 .col1 .part1",
+      scroller:".main",
+      markers:true,
+      start: "top 300px",
+      end:"bottom 200px"
+    }
+
+  })
+  gsap.from(".page8 .col1 .part2 h6",{
+    x:"-45vw",
+    stagger:0.3,
+    // duration:1,
+    scrollTrigger:{
+      trigger:".page8 .col1 .part1",
+      scroller:".main",
+      markers:true,
+      start: "top 300px",
+      end:"bottom 200px"
+    }
+
+  })
+}
 mylocomotive();
 slider1();
 slider2();
 myowl_crosol();
-front_page();
-front_page_Animation();
+// front_page();
+// front_page_Animation();
 secondpage();
 thirdpage();
 fifthpage();
 sixthpage();
+seventhpage();
+eightpage();

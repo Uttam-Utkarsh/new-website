@@ -596,6 +596,7 @@
         justify-content: center;
         text-transform: uppercase;
         font-size: 2vw;
+        overflow: hidden;
     }
 
     .page6 .row1 .part2 {
@@ -606,6 +607,7 @@
         padding-bottom: 2vw;
         text-transform: uppercase;
         font-size: 1.4rem;
+        overflow: hidden;
     }
 
     .page6 .row2 {
@@ -673,6 +675,7 @@
 
     .page7 .middlerow .col1 {
         /* background-color: #431717; */
+        overflow: hidden;
         width: 100%;
         height: 22vw;
         padding-top: 5vw;
@@ -681,24 +684,13 @@
 
     }
 
-    .page7 .middlerow .col1 .writeen h6 {
-        font-size: 3vw;
-        font-weight: 200;
-        color: red;
-        text-transform: uppercase;
-    }
-
-    .page7 .middlerow .col1 .writeen h2 {
-        font-size: 5vw;
-        text-transform: capitalize;
-        margin-top: 3px;
-    }
 
     .page7 .middlerow .col1 .writeen h3 {
         font-size: 4vw;
         text-transform: capitalize;
         margin-top: 4px;
         margin-left: 85px;
+        color: rgb(177, 66, 66);
     }
 
     .page7 .middlerow .col2 {
