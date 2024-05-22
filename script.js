@@ -197,7 +197,7 @@ function thirdpage() {
   });
 
   gsap.from(".page3 .row3 h6", {
-    x: 1200,
+    x: 1800,
     duration: 0.5,
     ease: "power1.inout",
     stagger: 0.5,
@@ -246,7 +246,12 @@ function fifthpage() {
   }
 };
 
+function sixthpage(){
+  gsap.to(".page6 .row1 .part1 h1",{
+    x:"25vw",
 
+  })
+}
 
 mylocomotive();
 slider1();
@@ -257,3 +262,4 @@ front_page_Animation();
 secondpage();
 thirdpage();
 fifthpage();
+sixthpage();
