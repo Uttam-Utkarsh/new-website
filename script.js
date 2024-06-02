@@ -82,22 +82,22 @@ function myowl_crosol() {
     nav: false,
     autoplay: false,
     autoplayTimeout: 3000,
-    dots: false,
+    dots: true,
     responsive: {
       0: {
-        items: 1,
+        items: 1.5,
       },
       600: {
-        items: 2,
+        items: 2.5,
       },
       1024: {
-        items: 3,
+        items: 3.5,
       },
       2000: {
-        items: 4,
+        items: 4.5,
       },
       2560: {
-        items: 5,
+        items: 5.5,
       },
     },
   });
@@ -346,6 +346,8 @@ function eightpage(){
 
   })
 }
+
+
 mylocomotive();
 slider1();
 slider2();
