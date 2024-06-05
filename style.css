@@ -234,15 +234,15 @@
         object-position: center;
     }
 
+    .page1 .row2 .col2{
+        display: flex;
+        gap: 1.2vw;
+    }
     .page1 .row2 a {
         text-decoration: none;
         color: rgb(0, 4, 4);
         font-size: 1.6vw;
         font-weight: 500;
-    }
-
-    .page1 .row2 .col2 a {
-        padding: 0px 5px;
     }
 
     .page1 .row2 .col3 #menu {

@@ -151,6 +151,14 @@ function front_page() {
     duration: 2,
     scale: 0.6,
   });
+
+  gsap.from(".page1 .row2 .col2 .mod ",{
+    x:1500,
+    stagger: 0.5,
+    duration: 1,
+    ease:"power1.in",
+  })
+
 }
 
 function secondpage() {
