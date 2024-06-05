@@ -6,7 +6,7 @@ function mylocomotive() {
   const locoScroll = new LocomotiveScroll({
     el: document.querySelector(".main"),
     smooth: true,
-    lerp:0.02,
+    lerp: 0.02,
   });
   // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
   locoScroll.on("scroll", ScrollTrigger.update);
@@ -179,7 +179,6 @@ function secondpage() {
       end: "top 50px",
     },
   });
-
 }
 
 function thirdpage() {
@@ -206,12 +205,11 @@ function thirdpage() {
       markers: false,
       start: "top 100px",
       end: "top 200px",
-    }
-  })
+    },
+  });
 }
 
 function fifthpage() {
-
   var t1 = gsap.timeline({
     scrollTrigger: {
       trigger: ".page5div1",
@@ -219,8 +217,8 @@ function fifthpage() {
       markers: false,
       start: "top 500px",
       end: "top 100px",
-      onEnter: showrandom
-    }
+      onEnter: showrandom,
+    },
   });
 
   function showrandom() {
@@ -234,119 +232,131 @@ function fifthpage() {
       num1.innerHTML = Math.floor(Math.random() * 10);
       num2.innerHTML = Math.floor(Math.random() * 1000);
       num3.innerHTML = Math.floor(Math.random() * 100);
-    };
+    }
 
     function myStopFunction() {
       num1.innerHTML = "10";
       num2.innerHTML = "300";
       num3.innerHTML = "70";
       clearInterval(myInterval);
-    };
+    }
   }
-};
+}
 
-function sixthpage(){
-
+function sixthpage() {
   // var tl = gsap.timeline()
-  gsap.from(".page6 .row1 .part1 h1",{
-    x:"-40vw",
-    ease:"power1.inout",
-    duration:1,
-    scrollTrigger:{
-      trigger:".page6 .row1 .part1",
-      scroller:".main",
-      markers:false,
+  gsap.from(".page6 .row1 .part1 h1", {
+    x: "-40vw",
+    ease: "power1.inout",
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".page6 .row1 .part1",
+      scroller: ".main",
+      markers: false,
       start: "top 300px",
-      end:"bottom 200px"
-    }
-
-  })
-  gsap.from(".page6 .row1 .part2 p",{
-    x:"-45vw",
-    duration:1,
-    scrollTrigger:{
-      trigger:".page6 .row1 .part1",
-      scroller:".main",
-      markers:false,
+      end: "bottom 200px",
+    },
+  });
+  gsap.from(".page6 .row1 .part2 p", {
+    x: "-45vw",
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".page6 .row1 .part1",
+      scroller: ".main",
+      markers: false,
       start: "top 300px",
-      end:"bottom 200px"
-    }
-
-  })
+      end: "bottom 200px",
+    },
+  });
 }
 
+function seventhpage() {
+  gsap.from(".page7 .middlerow .col1 .writeen h3", {
+    y: "45vw",
+    stagger: 0.1,
+    duration: 1,
 
-function seventhpage(){
-  gsap.from(".page7 .middlerow .col1 .writeen h3",{
-    y:"45vw",
-    stagger:0.1,
-    duration:1,
-
-    scrollTrigger:{
-      trigger:".page7 .middlerow .col1",
-      scroller:".main",
-      markers:false,
+    scrollTrigger: {
+      trigger: ".page7 .middlerow .col1",
+      scroller: ".main",
+      markers: false,
       start: "top 500px",
-      end:"bottom 200px"
-    }
-
-  })
-  gsap.to(".page7 .middlerow .col1 .writeen #students",{
-    delay:1.2,
-    x:"6vw",
-    scrollTrigger:{
-      trigger:".page7 .middlerow .col1",
-      scroller:".main",
-      markers:false,
+      end: "bottom 200px",
+    },
+  });
+  gsap.to(".page7 .middlerow .col1 .writeen #students", {
+    delay: 1.2,
+    x: "6vw",
+    scrollTrigger: {
+      trigger: ".page7 .middlerow .col1",
+      scroller: ".main",
+      markers: false,
       start: "top 500px",
-      end:"bottom 200px"
-    }
-
-  })
-  gsap.to(".page7 .middlerow .col1 .writeen #feedback",{
-    delay:1.5,
-    x:"10vw",
-    scrollTrigger:{
-      trigger:".page7 .middlerow .col1",
-      scroller:".main",
-      markers:false,
+      end: "bottom 200px",
+    },
+  });
+  gsap.to(".page7 .middlerow .col1 .writeen #feedback", {
+    delay: 1.5,
+    x: "10vw",
+    scrollTrigger: {
+      trigger: ".page7 .middlerow .col1",
+      scroller: ".main",
+      markers: false,
       start: "top 500px",
-      end:"bottom 200px"
-    }
-
-  })
+      end: "bottom 200px",
+    },
+  });
 }
 
-function eightpage(){
-  
-  gsap.to(".page8 .col1 .part1 h4",{
+function eightpage() {
+  gsap.to(".page8 .col1 .part1 h4", {
     // x:"-45vw",
-    scale:1.5,
-    duration:1,
-    scrollTrigger:{
-      trigger:".page8 .col1 .part1",
-      scroller:".main",
-      markers:false,
+    scale: 1.5,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".page8 .col1 .part1",
+      scroller: ".main",
+      markers: false,
       start: "top 300px",
-      end:"bottom 200px"
-    }
-
-  })
-  gsap.from(".page8 .col1 .part2 h6",{
-    x:"-45vw",
-    stagger:0.3,
+      end: "bottom 200px",
+    },
+  });
+  gsap.from(".page8 .col1 .part2 h6", {
+    x: "-45vw",
+    stagger: 0.3,
     // duration:1,
-    scrollTrigger:{
-      trigger:".page8 .col1 .part1",
-      scroller:".main",
-      markers:false,
+    scrollTrigger: {
+      trigger: ".page8 .col1 .part1",
+      scroller: ".main",
+      markers: false,
       start: "top 300px",
-      end:"bottom 200px"
-    }
-
-  })
+      end: "bottom 200px",
+    },
+  });
 }
 
+function hamburger() {
+  var profileisopen = false
+  var page1 = document.querySelector(".page1");
+  var profile = document.querySelector(".profile");
+  var box = document.querySelector(".hamburger-menu");
+
+  profile.addEventListener("click", () => {
+
+    if (profileisopen == false) {
+      // page1.style.width = "80%";
+      box.style.left = "78vw";
+      box.style.display = "block";
+      page1.style.transform = "ease-in-out" ;
+      profileisopen = true;
+    }
+    else {
+      box.style.left = "100vw";
+      box.style.display = "none";
+      profileisopen = false;
+    }
+  });
+}
 
 mylocomotive();
 slider1();
@@ -360,3 +370,4 @@ fifthpage();
 sixthpage();
 seventhpage();
 eightpage();
+hamburger();

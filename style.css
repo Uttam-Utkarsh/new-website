@@ -3,7 +3,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        
+
         font-family: Georgia, "Times New Roman", Times, serif;
     }
 
@@ -12,19 +12,171 @@
         width: 100%;
         height: 100%;
     }
-    
-    .main {
-        position: relative;
-        overflow: hidden;
-        /* background-color: #080808; */
-    }
+
 
     /* page 1 start */
     .page1 {
-        width: 100%;
+
         height: 100vh;
-        /* background-color: #4317175c; */
+        width: 100%;
+        position: relative;
+        /* background-color: rgba(0, 128, 0, 0.388); */
     }
+
+    .page1 .container {
+        width: 10vw;
+        height: 100vh;
+    }
+
+    .page1 .hamburger-menu {
+        display: none;
+        width: 20vw;
+        height: 50vh;
+        position: absolute;
+        z-index: 20;
+        top: 30vh;
+        
+    }
+
+    /* login form */
+    *,
+    *:before,
+    *:after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    /* .background{
+        width: 430px;
+        height: 520px;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 50%;
+    } */
+    /* .background .shape{
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        border-radius: 50%;
+    } */
+    /* .shape:first-child{
+        background: linear-gradient(
+            #1845ad,
+            #23a2f6
+        );
+        left: -80px;
+        top: -80px;
+    } */
+    /* .shape:last-child{
+        background: linear-gradient(
+            to right,
+            #ff512f,
+            #f09819
+        );
+        right: -30px;
+        bottom: -80px;
+    } */
+    form {
+        height: 520px;
+        width: 400px;
+        background-image: url("https://images.unsplash.com/photo-1649730240959-9d2d1ecc06fe?q=80&w=2438&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+        padding: 50px 35px;
+    }
+
+    form * {
+        font-family: 'Poppins', sans-serif;
+        color: #f7f4f4;
+        letter-spacing: 0.5px;
+        outline: none;
+        border: none;
+    }
+
+    form h3{
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 42px;
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        margin-top: 30px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    input {
+        display: block;
+        height: 50px;
+        width: 100%;
+        background-color: rgba(254, 254, 254, 0.358);
+        border-radius: 3px;
+        padding: 0 10px;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    ::placeholder {
+        color: #e5e5e5;
+        
+    }
+
+    #loginbutton {
+        margin-top: 50px;
+        width: 100%;
+        background-color: #ffeaea;
+        color: #080710;
+        padding: 15px 0;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .social {
+        margin-top: 30px;
+        display: flex;
+    }
+
+    .social div {
+        background: red;
+        width: 150px;
+        border-radius: 3px;
+        padding: 5px 10px 10px 5px;
+        background-color: rgba(255, 255, 255, 0.27);
+        color: #eaf0fb;
+        text-align: center;
+    }
+    .social a{
+        text-decoration: none;
+    }
+
+    .social div:hover {
+        background-color: rgba(255, 255, 255, 0.47);
+    }
+
+    .social .fb {
+        margin-left: 25px;
+    }
+
+    .social i {
+        margin-right: 4px;
+    }
+
+    /* login form end */
 
     .page1 .row1 {
         height: 30px;
@@ -196,15 +348,16 @@
         object-position: center;
         display: block;
         border-radius: 20px;
-        
+
         overflow: hidden;
         position: relative;
     }
-    .box{
+
+    .box {
         border: 2px solid rgb(11, 10, 10);
     }
 
-    .imgdets{
+    .imgdets {
         width: 30vw;
         height: 23vw;
         position: absolute;
@@ -214,16 +367,18 @@
         padding: 2vw 2vw;
 
     }
-    .imgdets>h1{
+
+    .imgdets>h1 {
         margin-bottom: 6vh;
     }
-    .imgdets>p{
+
+    .imgdets>p {
         font-size: 1.2vw;
     }
-    
 
-    .image-containerfor-row2:hover .imgdets{
-        left:0vw;
+
+    .image-containerfor-row2:hover .imgdets {
+        left: 0vw;
         transition-duration: 0.8s;
         background-color: #d5bebecd;
         /* border: 2px solid rgb(11, 10, 10); */
@@ -238,7 +393,8 @@
         display: block;
 
     }
-    .page2{
+
+    .page2 {
         background-image: url("https://images.unsplash.com/photo-1636837955417-2d8a4e49368f?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
         background-position: center;
         background-size: cover;
@@ -331,12 +487,12 @@
     .swiper-wrapper {
         width: 2vw !important;
     }
-    
+
     .swiper-slide {
         background-color: #f9f0f08b;
         background-image: url("https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg3fHx0ZXh0JTIwdGV4dHVyZXxlbnwwfHwwfHx8MA%3D%3D");
         background-position: center;
-        background-size: cover; 
+        background-size: cover;
         width: 300px !important;
         /* width: 22% ; */
         height: 200px !important;
@@ -396,8 +552,9 @@
         text-transform: uppercase;
     }
 
-    .page4 .row1 .col1 {
-        font-weight: 200;
+    .page4 .row1 .col1 h4 {
+        font-size: 2.5vw;
+        font-weight: 700;
     }
 
     .page4 .row2 {
@@ -694,7 +851,7 @@
         /* filter: blur(2px); */
         background-image: url("https://images.unsplash.com/photo-1487147264018-f937fba0c817?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
         background-position: center;
-        background-size:cover;
+        background-size: cover;
 
     }
 
@@ -921,7 +1078,8 @@
         justify-content: space-between;
         margin-bottom: 3vw;
     }
-    .page9 .row2 .myowl .myown .row-2 a{
+
+    .page9 .row2 .myowl .myown .row-2 a {
         text-decoration: none;
         color: black;
         cursor: pointer;
